@@ -34,6 +34,14 @@
     .abour-containers{
         margin-top: 0;
     }
+    .about-containers{
+        margin top: 1rem;
+        
+        display: block;
+    }
+    .details-container{
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 600px){
