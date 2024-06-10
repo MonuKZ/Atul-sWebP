@@ -299,7 +299,7 @@ about{
 }
 
 .details-container{
-    padding: 1.5 rem;
+    padding: 1.5rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
@@ -309,7 +309,7 @@ about{
 }
 
 .section-container{
-    gap: 4 rem;
+    gap: 4rem;
     height: 80%;
 }
 
