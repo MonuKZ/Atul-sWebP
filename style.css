@@ -157,7 +157,9 @@ section {
     box-sizing: border-box;
     min-height: fit-content;
 }
-
+.pp{
+    font-weight: bolder;
+}
 .section-container{
     display: flex;
 }
