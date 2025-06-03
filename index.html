@@ -7,7 +7,16 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     .quoted-text {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
       font-style: italic;
+      text-align: justify;
+      margin: 2rem;
+      font-size: 1.1rem;
+    }
+    .about-text {
+      font-style:normal;
+      
       text-align: justify;
       margin: 2rem;
       font-size: 1.1rem;
@@ -35,8 +44,17 @@
     <img src="assets/profile-pic.png" alt="Profile Photo" />
   </div>
     <h2 style="text-align: center;" center;">About</h2>
-    <button><a href="assets/Atul Anilkumar - CV.pdf" download>Download CV</a></button>
+    <button id="dwnld-btn"><a href="assets/Atul Anilkumar - CV.pdf" download>Download Resume</a></button>
+    
+    <blockquote class="about-text">
+    
+    <p>Passionate Computer Science graduate with strong foundations in AI, machine learning, and Linux systems. Experienced in supporting AI and robotics projects through hands-on technical skills and collaborative research. Eager to expand my knowledge and contribute to innovative technologies. Always open to new learning opportunities and challenges in the fields of AI, systems administration, and software development.</p>
+
+    </blockquote>
+
+    
     <blockquote class="quoted-text">
+      <hr>
       <p>“We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success.” </p>
     
     – Arianna Huffington
