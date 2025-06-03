@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .quoted-text {
+      font-style: italic;
+      text-align: justify;
+      margin: 2rem;
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -22,10 +30,17 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
+  <section id="about" style="justify-items: center;">
+    <div class="profile-photo">
+    <img src="assets/profile-pic.png" alt="Profile Photo" />
+  </div>
+    <h2 style="text-align: center;" center;">About</h2>
     <button><a href="assets/Atul Anilkumar - CV.pdf" download>Download CV</a></button>
-    <p>Web Development | Linux Systems Administration | AI & ML</p>
+    <blockquote class="quoted-text">
+      <p>“We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success.” </p>
+    
+    – Arianna Huffington
+  </blockquote>
   </section>
 
   <section id="Experience">
