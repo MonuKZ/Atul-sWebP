@@ -4,43 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+    .quoted-text {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-style: italic;
+      text-align: justify;
+      margin: 2rem;
+      font-size: 1.1rem;
     }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #444;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #333;
-      color: white;
+    .about-text {
+      font-style:normal;
+      
+      text-align: justify;
+      margin: 2rem;
+      font-size: 1.1rem;
     }
   </style>
 </head>
@@ -48,8 +27,11 @@
 
   <header>
     <h1>Atul Anilkumar</h1>
-    <p>Kottayam | Kerala | India </p>
-    <nav>
+    <p>Kottayam | Kerala | India</p>
+
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    
+    <nav id="navbar">
       <a href="#about">About</a>
       <a href="#Education">Education</a>
       <a href="#projects">Projects</a>
@@ -57,37 +39,41 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
+  <section id="about" style="justify-items: center;">
+    <div class="profile-photo">
+    <img src="assets/profile-pic.png" alt="Profile Photo" />
+  </div>
+    <h2 style="text-align: center;" center;">About</h2>
+    <button id="dwnld-btn"><a href="assets/Atul Anilkumar - CV.pdf" download>Download Resume</a></button>
     
-    <p>Web Development | Linux Systems Administration | AI & ML </p>
+    <blockquote class="about-text">
+    <hr>
+    <p>Passionate Computer Science graduate with strong foundations in AI, machine learning, and Linux systems. Experienced in supporting AI and robotics projects through hands-on technical skills and collaborative research. Eager to expand my knowledge and contribute to innovative technologies. Always open to new learning opportunities and challenges in the fields of AI, systems administration, and software development.</p>
+<hr>
+    </blockquote>
+
+    
+    <blockquote class="quoted-text">
+      
+      <p>"The only real mistake is the one from which we learn nothing." – Henry Ford</p>
+    
+    
+  </blockquote>
   </section>
 
   <section id="Experience">
     <h2>Experience</h2>
     <ul>
-      <hr>
       <p><strong>(2024 - Present)</strong></p>
-      <li><strong>Founder </strong> - <a href="chithrafilms.html">Chithrafilms.com</a>
+      <li><strong>Technical Assistant</strong> - School of Artificial Intelligence & Robotics, Mahatma Gandhi University.
         <ul>
-          <li>Creative Ad Making</li>  
-          <li>Digital Marketing Consultation</li>
-          <li>Worked on various projects related to AI and robotics.</li>
-          <li>Industry Leading Methodologies.</li>
-            
-        </ul>
-       </li>
-       <hr>
-        <p><strong>(2024 - Present)</strong></p>
-      <li><strong>Technical Assistant </strong> - School of Artificial Intelligence & Robotics, Mahatma Gandhi University.
-        <ul>
-          <li>System Administration - NVIDIA DGX Station A100.</li>  
+          <li>System Administration - NVIDIA DGX Station A100.</li>
           <li>Worked on Linux systems.</li>
           <li>Worked on various projects related to AI and robotics.</li>
           <li>Assisted in the development of AI-based projects.</li>
-            <li>Collaborated with faculty and students on research projects.</li>
+          <li>Collaborated with faculty and students on research projects.</li>
         </ul>
-       </li>
+      </li>
     </ul>
   </section>
 
@@ -95,11 +81,9 @@
     <h2>Education</h2>
     <ul>
       <li><strong>M.Sc. Computer Science</strong> - School of Computer Sciences, Mahatma Gandhi University.</li>
-      <li><strong>B.Sc. Computer Science</strong> - College of Applied Sciences (IHRD), Puthuppally. </li>
+      <li><strong>B.Sc. Computer Science</strong> - College of Applied Sciences (IHRD), Puthuppally.</li>
     </ul>
   </section>
-
-
 
   <section id="contact">
     <h2>Contact</h2>
@@ -111,5 +95,14 @@
     <p>&copy; 2025 Atul Anilkumar. All rights reserved.</p>
   </footer>
 
+  <script>
+    // Toggle mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
