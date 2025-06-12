@@ -3,105 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Atul Anilkumar - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .quoted-text {
-      font-family: 'Times New Roman', Times, serif;
-      font-weight: bold;
-      font-style: italic;
-      text-align: justify;
-      margin: 2rem;
-      font-size: 1.1rem;
-    }
-    .about-text {
-      font-style:normal;
-      
-      text-align: justify;
-      margin: 2rem;
-      font-size: 1.1rem;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <header>
-    <h1>Atul Anilkumar</h1>
-    <p>Kottayam | Kerala | India</p>
+  <header class="main-header">
+    <div class="header-content">
+      <h1 class="site-title">Atul Anilkumar</h1>
+      <p class="site-location">Kottayam | Kerala | India</p>
+    </div>
 
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
     
-    <nav id="navbar">
+    <nav id="navbar" class="main-nav">
       <a href="#about">About</a>
-      <a href="#Education">Education</a>
-      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about" style="justify-items: center;">
-    <div class="profile-photo">
-    <img src="assets/profile-pic.png" alt="Profile Photo" />
-  </div>
-    <h2 style="text-align: center;" center;">About</h2>
-    <button id="dwnld-btn"><a href="assets/Atul Anilkumar - CV.pdf" download>Download Resume</a></button>
-    
-    <blockquote class="about-text">
-    <hr>
-    <p>Passionate Computer Science graduate with strong foundations in AI, machine learning, and Linux systems. Experienced in supporting AI and robotics projects through hands-on technical skills and collaborative research. Eager to expand my knowledge and contribute to innovative technologies. Always open to new learning opportunities and challenges in the fields of AI, systems administration, and software development.</p>
-<hr>
-    </blockquote>
+  <main>
+    <section id="about" class="hero-section">
+      <div class="profile-photo-container">
+        <img src="assets/profile-pic.png" alt="Atul Anilkumar's Profile Photo" class="profile-photo" />
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <blockquote class="about-text">
+          <p>Passionate Computer Science graduate with strong foundations in AI, machine learning, and Linux systems. Experienced in supporting AI and robotics projects through hands-on technical skills and collaborative research. Eager to expand my knowledge and contribute to innovative technologies. Always open to new learning opportunities and challenges in the fields of AI, systems administration, and software development.</p>
+        </blockquote>
+        <blockquote class="quote">
+          <p>"The only real mistake is the one from which we learn nothing."</p>
+          <cite>— Henry Ford</cite>
+        </blockquote>
+        <a href="assets/Atul Anilkumar - CV.pdf" download class="btn download-btn">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </section>
 
-    
-    <blockquote class="quoted-text">
-      
-      <p>"The only real mistake is the one from which we learn nothing." – Henry Ford</p>
-    
-    
-  </blockquote>
-  </section>
+    <section id="experience" class="section-timeline">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">(2024 - Present)</div>
+          <div class="timeline-content">
+            <h3>Technical Assistant <br> <span>School of Artificial Intelligence & Robotics, Mahatma Gandhi University</span></h3>
+            <ul>
+              <li>System Administration - NVIDIA DGX Station A100.</li>
+              <li>Worked on Linux systems.</li>
+              <li>Worked on various projects related to AI and robotics.</li>
+              <li>Assisted in the development of AI-based projects.</li>
+              <li>Collaborated with faculty and students on research projects.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="Experience">
-    <h2>Experience</h2>
-    <ul>
-      <p><strong>(2024 - Present)</strong></p>
-      <li><strong>Technical Assistant</strong> - School of Artificial Intelligence & Robotics, Mahatma Gandhi University.
-        <ul>
-          <li>System Administration - NVIDIA DGX Station A100.</li>
-          <li>Worked on Linux systems.</li>
-          <li>Worked on various projects related to AI and robotics.</li>
-          <li>Assisted in the development of AI-based projects.</li>
-          <li>Collaborated with faculty and students on research projects.</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+    <section id="education" class="section-timeline">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>M.Sc. Computer Science <br> <span>School of Computer Sciences, Mahatma Gandhi University</span></h3>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>B.Sc. Computer Science <br> <span>College of Applied Sciences (IHRD), Puthuppally</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="Education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>M.Sc. Computer Science</strong> - School of Computer Sciences, Mahatma Gandhi University.</li>
-      <li><strong>B.Sc. Computer Science</strong> - College of Applied Sciences (IHRD), Puthuppally.</li>
-    </ul>
-  </section>
+    <!-- <section id="projects" class="section-cards">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project Title 1</h3>
+                <p>A brief description of Project 1, highlighting key technologies and your role. This project involved X, Y, and Z.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-code"></i> Code</a>
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Project Title 2</h3>
+                <p>Another project demonstrating your skills in a different area, perhaps focusing on machine learning or AI application.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-code"></i> Code</a>
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Project Title 3</h3>
+                <p>A third project showing off a unique skill or technology. Make sure to tailor these descriptions to your actual work.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-code"></i> Code</a>
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: atulanilkumar@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/atulanil" target="_blank">linkedin.com/in/atulanil</a></p>
-  </section>
+    <section id="contact" class="section-contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:atulanilkumar@gmail.com">atulanilkumar@gmail.com</a></p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/atulanil" target="_blank">linkedin.com/in/atulanil</a></p>
+      </div>
+    </section>
+  </main>
 
-  <footer>
+  <footer class="main-footer">
     <p>&copy; 2025 Atul Anilkumar. All rights reserved.</p>
   </footer>
 
   <script>
-    // Toggle mobile menu
     const menuToggle = document.getElementById('menu-toggle');
     const navbar = document.getElementById('navbar');
 
     menuToggle.addEventListener('click', () => {
       navbar.classList.toggle('active');
+    });
+
+    // Close navbar when a link is clicked (for mobile)
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navbar.classList.contains('active')) {
+          navbar.classList.remove('active');
+        }
+      });
     });
   </script>
 </body>
